@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Muallif</title>
+</head>
+<body>
+
+    <h2>{{ muallif.ism }} {{ muallif.familiya }}</h2>
+
+    <h3>Kitoblari:</h3>
+
+    <ul>
+        {% for kitob in muallif.kitoblari.all %}
+            <li>{{ kitob.nomi }}</li>
+        {% empty %}
+            <li>Kitob yo'q.</li>
+        {% endfor %}
+    </ul>
+
+</body>
+</html>

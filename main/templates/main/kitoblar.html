@@ -1,0 +1,8 @@
+    <ul>
+      {% for m in mualliflar %}
+        <li>{{ m.ism_familiya }} ({{ m.tugilgan_yili }})</li>
+      {% empty %}
+        <li>Hech narsa yo'q</li>
+      {% endfor %}
+    </ul>
+ 

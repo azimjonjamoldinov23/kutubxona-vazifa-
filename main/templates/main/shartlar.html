@@ -1,0 +1,7 @@
+    {% for k in kitoblar %}
+      {% if k.mavjud %}
+        <p style="color: green">{{ k.nom }}</p>
+      {% else %}
+        <p style="color: red">{{ k.nom }} — Mavjud emas</p>
+      {% endif %}
+    {% endfor %}

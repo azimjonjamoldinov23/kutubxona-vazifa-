@@ -1,0 +1,7 @@
+    <h1>{{ kitob.nom }}</h1>
+    <p>Muallif:
+      <a href="{% url 'muallif_detail' kitob.muallif.id %}">
+        {{ kitob.muallif.ism_familiya }}
+      </a>
+    </p>
+    <a href="{% url 'bosh_sahifa' %}">← Orqaga</a>

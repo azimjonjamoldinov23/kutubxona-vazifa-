@@ -1,0 +1,7 @@
+    <h1>{{ muallif.ism_familiya }}</h1>
+    <h2>Kitoblari:</h2>
+    <ul>
+      {% for k in muallif.kitoblari.all %}
+        <li>{{ k.nom }} ({{ k.yil }})</li>
+      {% endfor %}
+    </ul>
