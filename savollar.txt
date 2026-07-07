@@ -47,9 +47,10 @@ SAVOL 4.
 {{ }} va {% %} o'rtasidagi farq nima? Har biriga misol keltiring.
 
 JAVOB:
-________________________________________________________________
-________________________________________________________________
-________________________________________________________________
+{{ }} — o‘zgaruvchi (ma'lumot)ni chiqaradi.
+Misol: {{ ism }}
+{% %} — buyruq va mantiqiy amallar uchun ishlatiladi.
+Misol: {% for kitob in kitoblar %}
 
 
 ----------------------------------------------------------------
@@ -58,10 +59,7 @@ Nima uchun template fayllarni books/templates/books/ ko'rinishida
 (ikki marta app nomi bilan) joylashtiramiz?
 
 JAVOB:
-________________________________________________________________
-________________________________________________________________
-________________________________________________________________
-
+Bu usulda Django qaysi app'ning template'i ekanini aniq biladi. Bir nechta app'da index.html bo'lsa ham, chalkashmaydi.
 
 ----------------------------------------------------------------
 SAVOL 6.
@@ -69,11 +67,8 @@ SAVOL 6.
 Har biri qachon ishlatiladi?
 
 JAVOB:
-________________________________________________________________
-________________________________________________________________
-________________________________________________________________
-
-
+extends — asosiy shablondan foydalanadi.
+include — kichik qismlarni (masalan, header, footer) qo'shadi.
 ----------------------------------------------------------------
 SAVOL 7.
 Quyidagi kod template'da nima qaytaradi va nima uchun?
@@ -81,10 +76,8 @@ Quyidagi kod template'da nima qaytaradi va nima uchun?
     {{ kitob.muallif.ism_familiya }}
 
 JAVOB:
-________________________________________________________________
-________________________________________________________________
-________________________________________________________________
 
+Sababi: kitob → muallif obyektiga o'tadi, so'ng ism_familiya maydonining qiymatini ekranga chiqaradi.
 
 ----------------------------------------------------------------
 SAVOL 8.
@@ -92,9 +85,10 @@ Filter nima? Quyidagi filtrlar nima qiladi:
   |upper, |length, |default, |date
 
 JAVOB:
-________________________________________________________________
-________________________________________________________________
-________________________________________________________________
+|upper — matnni katta harflarga o'tkazadi.
+|length — uzunligini (elementlar sonini) qaytaradi.
+|default — qiymat bo'lmasa, standart qiymat chiqaradi.
+|date — sanani kerakli formatda chiqaradi.
 
 
 ================================================================
