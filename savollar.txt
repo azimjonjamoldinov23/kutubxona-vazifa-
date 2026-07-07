@@ -4,9 +4,9 @@
   (Templates va render())
 ================================================================
 
-Talaba F.I.O: _______________________________
-Guruh:        _______________________________
-Sana:         _______________________________
+Talaba F.I.O: Jamoldinov Azimjon
+Guruh: DS2605       
+Sana: 06/07/2026        
 
 
 KO'RSATMA:
@@ -21,9 +21,7 @@ Template (shablon) nima va Django'da u nima uchun kerak?
 O'z so'zlaringiz bilan tushuntiring.
 
 JAVOB:
-________________________________________________________________
-________________________________________________________________
-________________________________________________________________
+Django'da u ma'lumotlarni ekranga chiroyli chiqarish uchun ishlatiladi.
 
 
 ----------------------------------------------------------------
@@ -31,9 +29,9 @@ SAVOL 2.
 render() funksiyasi nima qiladi? U qanday 3 ta ishni bajaradi?
 
 JAVOB:
-________________________________________________________________
-________________________________________________________________
-________________________________________________________________
+1 .Template (HTML)ni topadi.
+2 .Ma'lumotlarni templatega uzatadi.
+3 .Tayyor sahifani foydalanuvchiga yuboradi.
 
 
 ----------------------------------------------------------------
@@ -41,9 +39,7 @@ SAVOL 3.
 Context nima? View'dan template'ga ma'lumot qanday uzatiladi?
 
 JAVOB:
-________________________________________________________________
-________________________________________________________________
-________________________________________________________________
+Ma'lumot lug'at (dict) ko'rinishida render() funksiyasi orqali uzatiladi.
 
 
 ----------------------------------------------------------------
